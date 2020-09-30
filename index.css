@@ -37,7 +37,7 @@
 
 .header__input {
   min-width: 62.5%;
-  min-height: 42px;
+  padding-bottom: 5.5%;
   background-color: #f5f5f5;
   margin-right: 24px;
   border: none;

@@ -1,4 +1,4 @@
-class TableShit {
+class Table {
   constructor(tableSelector) {
     this.table = document.querySelector(tableSelector);
     this.bar = this.table.querySelector(".bar");
@@ -32,5 +32,38 @@ class TableShit {
   }
 }
 
-const myTable = new TableShit(".table");
+const myTable = new Table(".table");
 myTable.init();
+
+
+let btns = document.querySelectorAll('.table-grid__item')
+
+let input = document.getElementById('value')
+
+//Функция добавления чисел в инпут
+let clearBtn  = document.querySelector('.header__button')
+btns.forEach((item)=>{
+  item.addEventListener('click', (e)=>{
+    console.log('number')
+     let num = +item.innerHTML
+     input.value =num 
+  })
+})
+
+//Функция очистки инпут
+clearBtn.addEventListener('click', (e)=>{
+     input.value = ''
+})
+
+
+const cards = document.querySelectorAll('.table-grid__item');
+
+function shuffle() {
+  console.log('randomCard')
+  cards.forEach(card => {
+    let ramdomPos = Math.floor(Math.random() * 8);
+    card.style.order = ramdomPos;
+  });
+}
+
+setInterval(() => shuffle(), 5000)

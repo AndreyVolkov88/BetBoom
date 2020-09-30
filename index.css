@@ -48,10 +48,10 @@
   padding-top: 36px;
   padding-right: 24px;
   padding-bottom: 5.2%;
-  position: relative;
+  justify-content: space-between;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  grid-template-columns: 70px min-content;
+  column-gap: 26px;
 }
 
 .bar__item {
@@ -88,8 +88,8 @@
 
 .table-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(81.25px, 130px));
-  grid-template-rows: repeat(4, minmax(1fr, auto));
+  grid-template-columns: repeat(2, 31vw);
+  grid-template-rows: repeat(4, 31vw);
   align-items: stretch;
   justify-items: stretch;
   background: silver;

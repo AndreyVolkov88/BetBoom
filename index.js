@@ -36,7 +36,7 @@ class Table {
 
 const myTable = new Table('.table');
 
-const btns = document.querySelectorAll('span');
+const btns = document.querySelectorAll('.table-grid__item-span');
 
 const input = document.getElementById('value');
 

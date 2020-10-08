@@ -181,7 +181,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     e.dataTransfer.dropEffect = 'move';
-    
     return false;
   }
 

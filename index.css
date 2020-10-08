@@ -101,19 +101,19 @@
   transition: .33s;
 }
 
-.table-grid.opacity .table-grid__item{
+.table-grid.transform .table-grid__item{
     transform: scale(.1);
 }
 
-.table-grid:not(.opacity) .table-grid__item{
+.table-grid:not(.transform) .table-grid__item{
   transform: scale(1);
 
 }
 
-.table-grid.opacity span{
+.table-grid.transform span{
     opacity: 0;
 }
-.table-grid:not(.opacity) span{
+.table-grid:not(.transform) span{
     opacity: 1; 
     transition: opacity .33s ease;
 }
@@ -130,7 +130,7 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
-  cursor: pointer;
+  cursor: move;
   transition: transform .33s ease;
 }
 
@@ -150,4 +150,8 @@
 
 .selected {
   opacity: 0.5;
+}
+
+.table-grid__item.over {
+  border: 3px dotted #666;
 }

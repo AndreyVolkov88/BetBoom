@@ -45,7 +45,7 @@ let clearBtn = document.querySelector('.header__button');
 btns.forEach((item) => {
   item.addEventListener('click', (e) => {
     console.log('number');
-    let num = +item.innerHTML;
+    let num = +item.textContent;
     input.value = num;
   });
 });

@@ -74,6 +74,7 @@ setInterval(() => {
   setTimeout(() => cardsBox.classList.remove('transform'), 333);
 }, 5000);
 
+
 //функция drag & drop
 // const tasksListElement = document.querySelector('.table-grid');
 // const taskElements = tasksListElement.querySelectorAll('.table-grid__item');
@@ -162,7 +163,7 @@ setInterval(() => {
 // });
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
+const dNd = document.addEventListener('DOMContentLoaded', (event) => {
 
   var dragSrcEl = null;
   
@@ -224,3 +225,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     item.addEventListener('dragend', handleDragEnd, false);
   });
 });
+
